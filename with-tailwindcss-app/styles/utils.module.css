@@ -1,12 +1,78 @@
-
+.mainText{
+    position: relative;
+    padding-top: 100px;
+    padding-left: 40px;
+}
 .mainText h1{
     width: 22rem;
     font-size: 2.0rem;
-    color: white;
+    color: #D9D9D9;
     font-style: light;
     font-weight: 400;
-    position: relative;
-    left: 40px;
-    top: 100px;
 
+}
+
+.header{
+    position: relative;
+    display: flex;
+    font-size: small;
+    color: #3F3F3F;
+    padding-left: 40px;
+    gap: 35px;
+    font-weight: 400;
+
+}
+
+.blockContainer{
+    padding-left: 40px;
+    padding-top: 30px;
+}
+
+.rectangle{
+    width: 332px;
+    height: 202px;
+    left: 0px;
+    top: 4px;
+    position: relative;
+    background: rgba(167, 167, 168, 0.2);
+    border-radius: 16px;
+    opacity: 0.5;
+    clip: auto;
+    overflow: hidden;
+
+}
+
+.circle1{
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    background: #2CA8DD;
+    filter: blur(50px);
+}
+
+.circle2{
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    background: #2CA8DD;
+    filter: blur(50px);
+    margin-left: 140px;
+    margin-top: 60px;
+}
+
+.circle3{
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    background: #2CA8DD;
+    filter: blur(50px);
+    margin-left: 180px;
+    margin-top: 6px;
+}
+
+.companyDate{
+    display: flex;
+    gap: 50px;
+    font-size: 12px;
+    color: #FFFFFF;
 }
