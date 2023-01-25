@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import utilStyles from '../styles/utils.module.css';
+import Image from 'next/image'
+
 
 
 
@@ -16,7 +18,14 @@ export default function Home() {
         </div>
         <div className={utilStyles.blockContainer}>
             <div className={utilStyles.oneBlock}>
+                    <Image
+                        src="/images/adrss.png"
+                        alt="Adel Design Research Website Design"
+                        width={300}
+                        height={170}
+                    />
                 <div className={utilStyles.rectangle}>
+                    
                     <div className={utilStyles.circle1}></div>
                     <div className={utilStyles.circle2}></div>
                     <div className={utilStyles.circle3}></div>
@@ -24,8 +33,75 @@ export default function Home() {
 
                 </div>
                 <div className={utilStyles.companyDate}>
-                    <h2>Company</h2>
-                    <h2>Date</h2>
+                    <h2>ADR Lab</h2>
+                    <h2 style={{color: '#9C9C9C'}}>2022-Active</h2>
+                </div>
+                <h2>Role</h2>
+                
+            </div>
+            <div className={utilStyles.oneBlock}>
+                    <Image
+                        src="/images/adrss.png"
+                        alt="Adel Design Research Website Design"
+                        width={300}
+                        height={170}
+                    />
+                <div className={utilStyles.rectangle}>
+                    
+                    <div className={utilStyles.circle1}></div>
+                    <div className={utilStyles.circle2}></div>
+                    <div className={utilStyles.circle3}></div>
+                    <div className={utilStyles.circle4}></div>
+
+                </div>
+                <div className={utilStyles.companyDate}>
+                    <h2>ADR Lab</h2>
+                    <h2 style={{color: '#9C9C9C'}}>2022-Active</h2>
+                </div>
+                <h2>Role</h2>
+                
+            </div>
+            <div className={utilStyles.oneBlock}>
+                    <Image
+                        src="/images/adrss.png"
+                        alt="Adel Design Research Website Design"
+                        width={300}
+                        height={170}
+                    />
+                <div className={utilStyles.rectangle}>
+                    
+                    <div className={utilStyles.circle1}></div>
+                    <div className={utilStyles.circle2}></div>
+                    <div className={utilStyles.circle3}></div>
+                    <div className={utilStyles.circle4}></div>
+
+                </div>
+                <div className={utilStyles.companyDate}>
+                    <h2>ADR Lab</h2>
+                    <h2 style={{color: '#9C9C9C'}}>2022-Active</h2>
+                </div>
+                <h2>Role</h2>
+                
+            </div>
+            <div className={utilStyles.oneBlock}>
+                        <Image
+                            src="/images/adrss.png"
+                            alt="Adel Design Research Website Design"
+                            width={300}
+                            height={170}
+                        />
+                    
+                <div className={utilStyles.rectangle}>
+                    
+                    <div className={utilStyles.circle1}></div>
+                    <div className={utilStyles.circle2}></div>
+                    <div className={utilStyles.circle3}></div>
+                    <div className={utilStyles.circle4}></div>
+
+                </div>
+                <div className={utilStyles.companyDate}>
+                    <h2>ADR Lab</h2>
+                    <h2 style={{color: '#9C9C9C'}}>2022-Active</h2>
                 </div>
                 <h2>Role</h2>
                 
