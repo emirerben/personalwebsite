@@ -25,12 +25,12 @@
 
 .blockContainer{
     width: 100%;
-    padding-left: 40px;
+    margin-left: 40px;
     padding-top: 30px;
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
-    gap: 100px;
+    gap: 50px;
 }
 
 .rectangle{
@@ -39,11 +39,14 @@
     left: 0px;
     top: 4px;
     position: relative;
+    grid-column: 1;
+    grid-row: 1;
     background: rgba(167, 167, 168, 0.2);
     border-radius: 16px;
     opacity: 0.5;
     clip: auto;
     overflow: hidden;
+    margin-right: 50px;
 
 }
 
@@ -88,8 +91,12 @@
     font-weight: 100;
 }
 
+.oneBlock{
+    display: grid;
+}
 .oneBlock img{
-    position: absolute;
+    grid-column: 1;
+    grid-row: 1;
     z-index: 5;
     margin-top: 20px;
     margin-left: 16px;

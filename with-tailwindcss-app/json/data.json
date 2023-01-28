@@ -1,0 +1,20 @@
+{
+    "posts": [
+      {  
+        "company": "ADR Lab",
+        "role": "Web developer",
+        "date": "2022-Active",
+        "src": "/images/adrss.png",
+        "color": "#2CA8DD",
+        "alt": "Adel Design Research Website Design" 
+      },
+      {  
+        "company": "Coda",
+        "role": "Growth Fellow",
+        "date": "2022",
+        "src": "/images/adrss.png",
+        "color": "#DD3333",
+        "alt": "Coda.io"  
+      }
+    ]
+}
