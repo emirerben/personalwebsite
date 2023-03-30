@@ -1,7 +1,15 @@
 html, body{
-    font-family: 'Inter';
-    background-color: black;
+    font-family:'Inter';
     max-width: 100%;
     overflow-x: hidden;
+    padding: 0.4rem;
 }
 
+a{
+    color: black;
+}
+
+h3{
+    color: rgb(197, 197, 197);
+    font-weight: 400;
+}
