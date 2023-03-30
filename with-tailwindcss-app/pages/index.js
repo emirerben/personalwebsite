@@ -25,12 +25,12 @@ export default function Home(props) {
     return(
         <>
         <div className={utilStyles.mainText}>
-            <h1>I design 🖌 and build 👨‍💻 software to create engaging user experiences. I am a senior studying Computer Science in Engineering at the University of Michigan 〽️. Currently working at <a href='http://adrlabs.vercel.app'>ADR Lab</a></h1>
+            <h1>I design 🖌 and build 👨‍💻 software to create engaging user experiences. I am a senior studying Computer Science in Engineering at the University of Michigan 〽️. Currently working at <a style={{color:'black'}} href='http://adrlabs.vercel.app'>ADR Lab</a></h1>
         </div>
         <div className={utilStyles.lowerSection}>
             <h3 style={{fontSize:16}}>Exploring film</h3>
 
-            <div style={{flexDirection:'row-reverse'}} className={utilStyles.homePictures}>
+            <div className={utilStyles.homePictures}>
             {images.map(image =>
                 <Image className={utilStyles.filmStyle}
                                     src={"/images/"+image.filename}
@@ -46,15 +46,15 @@ export default function Home(props) {
 
             <div style={{gap:80}} className={utilStyles.homePictures}>
                 <div>
-                    <h3 style={{fontSize:32}}>Founded Usersmagic</h3>
+                    <h3 style={{fontSize:32}}>Founded <a style={{color: 'turquoise'}}>Usersmagic</a></h3>
                     <p style={{}}>2020-2022</p>
                 </div>
                 <div>
-                    <h3 style={{fontSize:32}}>Growth Fellow at Coda</h3>
+                    <h3 style={{fontSize:32}}>Growth Fellow at <a style={{color: 'orange'}}>Coda</a></h3>
                     <p style={{}}>2021-2022</p>
                 </div>
                 <div>
-                    <h3 style={{fontSize:32}}>Web developer at ADR</h3>
+                    <h3 style={{fontSize:32}}>Web developer at <a style={{color: 'black'}}>ADR</a></h3>
                     <p style={{}}>2022-Active</p>
                 </div>
                 
