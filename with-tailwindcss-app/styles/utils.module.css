@@ -27,9 +27,6 @@
     flex-direction: row;
 }
 
-.filmStyle{
-    object-fit:cover;
-}
 
 .usersmagic a:hover{
     color: aqua;
@@ -74,8 +71,10 @@
     padding-top: 30px;
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: auto;
+    overflow: auto;
     gap: 50px;
+    white-space: nowrap;
+    flex-direction: row;
 }
 
 .rectangle{
@@ -146,5 +145,71 @@
     margin-top: 20px;
     margin-left: 16px;
 
+}
+
+
+.oneInfoBlock{
+    /* background-color: rgba(195, 195, 195, 0.643); */
+
+    border-radius: 4%;
+
+    min-width: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.oneInfoBlock img{
+    border-radius: 4%;
+}
+
+.oneInfoBlock h3{
+    color: white;
+    margin-left: 10px;
+    z-index: 10;
+    position: relative;
+    margin-top: -50px;
+}
+
+.blocksContainer{
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    overflow: auto;
+    white-space: nowrap;
+    flex-direction: row;
+}
+
+.backgroundStyle{
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    filter: blur(90px);
+    /* height: 100%; */
+    z-index: 0;
+    position: relative;
+    object-fit:cover;
+    overflow: hidden;
+
+
+}
+
+.backgroundStyle:hover {
+    filter: blur(0px);
+    transition: 0.2s;
+    
+}
+
+.filmStyle{
+    display: none;
+    position: absolute;
+    z-index: 5;
+    margin-left: -300px;
+}
+
+.backgroundStyle:hover .filmStyle{
+    display: contents;
+    object-fit:cover;
+    
+
+    margin: 5px;
 }
 

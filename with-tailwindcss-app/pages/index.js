@@ -28,7 +28,7 @@ export default function Home(props) {
             <h1>I design 🖌 and build 👨‍💻 software to create engaging user experiences. I am a senior studying Computer Science in Engineering at the University of Michigan 〽️. Currently working at <a style={{color:'black'}} href='http://adrlabs.vercel.app'>ADR Lab</a></h1>
         </div>
         <div className={utilStyles.lowerSection}>
-            <h3 style={{fontSize:16}}>Exploring film</h3>
+            {/* <h3 style={{fontSize:16}}>Exploring film</h3>
 
             <div className={utilStyles.homePictures}>
             {images.map(image =>
@@ -39,8 +39,66 @@ export default function Home(props) {
                                     height={300}
                 />
             ) }
+            </div> */}
+            <div className={utilStyles.blocksContainer}>
+                <div className={utilStyles.oneInfoBlock}>
+                    <Image
+                        className={utilStyles.backgroundStyle}
+                                        src={"/images/usersmagicblackimage.png"}
+                                        alt="film from Ross"
+                                        width={300}
+                                        height={500}
+
+                    />
+                    <h3>Usersmagic</h3>
+                </div>
+                <div className={utilStyles.oneInfoBlock}>
+                    <Image
+                        className={utilStyles.backgroundStyle}
+                                        src={"/images/tennisimage.png"}
+                                        alt="film from Ross"
+                                        width={300}
+                                        height={500}
+
+                    />
+                    <h3>🎾</h3>
+                </div>
+                <div className={utilStyles.oneInfoBlock}>
+                    <Image
+                        className={utilStyles.backgroundStyle}
+                                        src={"/images/adrimage.png"}
+                                        alt="ADR Lab"
+                                        width={300}
+                                        height={500}
+
+                    />
+                    <h3>Web Developer @ADR</h3>
+                </div>
+                <div className={utilStyles.oneInfoBlock}>
+                    <Image
+                        className={utilStyles.backgroundStyle}
+                                        src={"/images/adrimage.png"}
+                                        alt="ADR Lab"
+                                        width={300}
+                                        height={500}
+
+                    />
+                    <h3>Web Developer @ADR</h3>
+                </div>
+                <div className={utilStyles.oneInfoBlock}>
+                    <Image
+                        className={utilStyles.backgroundStyle}
+                                        src={"/images/adrimage.png"}
+                                        alt="ADR Lab"
+                                        width={300}
+                                        height={500}
+
+                    />
+                    <h3>Web Developer @ADR</h3>
+                </div>
             </div>
         </div>
+
         <div className={utilStyles.lowerSection}>
             <h3 style={{fontSize:16}}>Experience</h3>
 
@@ -50,11 +108,11 @@ export default function Home(props) {
                     <p style={{}}>2020-2022</p>
                 </div>
                 <div>
-                    <h3 style={{fontSize:32}}>Growth Fellow at <a style={{color: 'orange'}}>Coda</a></h3>
+                    <h3 style={{fontSize:32}}>Growth Fellow at <a href='https://coda.io/'  style={{color: 'orange'}}>Coda</a></h3>
                     <p style={{}}>2021-2022</p>
                 </div>
                 <div>
-                    <h3 style={{fontSize:32}}>Web developer at <a style={{color: 'black'}}>ADR</a></h3>
+                    <h3 style={{fontSize:32}}>Web developer at <a href='https://adrlabs.vercel.app/' style={{color: 'black'}}>ADR</a></h3>
                     <p style={{}}>2022-Active</p>
                 </div>
                 
