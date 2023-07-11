@@ -75,6 +75,7 @@
     gap: 50px;
     white-space: nowrap;
     flex-direction: row;
+    scroll-snap-align: center;
 }
 
 .rectangle{
