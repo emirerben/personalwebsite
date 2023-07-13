@@ -207,11 +207,20 @@
     border-color: #bcbcbc;
 
 }
+@media (max-width:600px){
+
+  
+    .backgroundStyle{
+        filter: blur(0px);
+    }
+
+  
+}
+
 
 .backgroundStyle:hover {
     filter: blur(0px);
     transition: 0.2s;
-
     
 }
 
