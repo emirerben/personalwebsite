@@ -4,7 +4,6 @@ import Image from 'next/image'
 import fsPromises from 'fs/promises';
 import path from 'path'
 import { useState } from 'react';
-import { useEffect } from 'react';
 
 
 export async function getStaticProps() {
@@ -23,29 +22,6 @@ export default function Home(props) {
 
     const posts = props.posts;
     const images = props.images;
-
-    useEffect(() => {
-        const handleScroll = () => {
-          const elements = document.querySelectorAll('.oneInfoBlock');
-    
-          elements.forEach((element) => {
-            const rect = element.getBoundingClientRect();
-            const viewHeight = window.innerHeight;
-    
-            if (rect.top < viewHeight / 2 && rect.bottom > viewHeight / 2) {
-              element.classList.remove('blur');
-            } else {
-              element.classList.add('blur');
-            }
-          });
-        };
-    
-        window.addEventListener('scroll', handleScroll);
-    
-        return () => {
-          window.removeEventListener('scroll', handleScroll);
-        };
-      }, []);
     return(
         <>
         <div className={utilStyles.mainText}>
@@ -123,7 +99,7 @@ export default function Home(props) {
             </div>
         </div>
 
-        <div className={utilStyles.lowerSection}>
+        {/* <div className={utilStyles.lowerSection}>
             <h3 style={{fontSize:16}}>Experience</h3>
 
             <div style={{gap:80}} className={utilStyles.homePictures}>
@@ -142,7 +118,7 @@ export default function Home(props) {
                 
 
             </div>
-        </div>
+        </div> */}
         
          {/* <div className={utilStyles.header}>
             <h3 style={{color: '#C6C6C6'}}>Works</h3>

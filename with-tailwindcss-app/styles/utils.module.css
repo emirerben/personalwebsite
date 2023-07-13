@@ -76,6 +76,8 @@
     white-space: nowrap;
     flex-direction: row;
     scroll-snap-align: center;
+ 
+
 }
 
 .rectangle{
@@ -154,9 +156,11 @@
 
     border-radius: 4%;
 
-    min-width: 300px;
+    min-width: 305px;
     position: relative;
     overflow: hidden;
+    min-height: 505px;
+
 }
 .oneInfoBlock img{
     border-radius: 4%;
@@ -177,6 +181,14 @@
     overflow: auto;
     white-space: nowrap;
     flex-direction: row;
+
+
+
+    flex-wrap: nowrap;
+
+    scroll-snap-align: center;
+
+
 }
 
 .backgroundStyle{
@@ -184,18 +196,22 @@
   background-repeat: no-repeat;
   background-size: cover;
     filter: blur(90px);
+
     /* height: 100%; */
     z-index: 0;
     position: relative;
     object-fit:cover;
     overflow: hidden;
-
+    color: #2CA8DD;
+    border-style: solid;
+    border-color: #bcbcbc;
 
 }
 
 .backgroundStyle:hover {
     filter: blur(0px);
     transition: 0.2s;
+
     
 }
 
@@ -214,3 +230,8 @@
     margin: 5px;
 }
 
+
+.oneInfoBlock.blur {
+    filter: blur(90px);
+    transition: filter 0.2s;
+  }
